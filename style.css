@@ -6,8 +6,13 @@ h1 {
     color: rgb(255, 0, 0);
     font-size: 25px;
     font-family: 'Segoe UI';
-    background-color: black;
-    color: rgb(76, 108, 153);
+    color: #a052c4;
+    /*mod*/
+    text-align: center;
+}
+
+h2 {
+    color: #a052c4;
 }
 
 p {
@@ -26,7 +31,12 @@ img {
 }
 
 label {
-    font-size: 25px;
+    font-size: 15px;
+    /*1*/
+    color: black;
+    font-weight: bold;
+    background: rgb(130, 31, 67);
+    padding: 0 4px;
 }
 
 ol li {
@@ -39,4 +49,26 @@ ul li {
     font-weight: bold;
     background-color: #dcf539;
     text-align: center;
+}
+
+input[type="text"] {
+    border: none;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #6ded74;
+    color: rgb(12, 11, 11);
+    border-radius: 20px;
+    /**/
+    margin-top: 10px;
+    border: none;
+    padding: 3px 15px;
+
+}
+
+input[type="submit"]:hover {
+    background-color: black;
+    color: white;
+    /**/
 }
