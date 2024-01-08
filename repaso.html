@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini proyecto</title>
+    <style>
+        .font {
+            font-size: 20px;
+            font-weight: bolder;
+            margin-bottom: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        button {
+            background-color: rgb(123, 201, 46);
+            padding: 7px 10px;
+            border-radius: 8px;
+            color: white;
+        }
+        input[type="text"] {
+            border: 1px solid black;
+            padding: 3px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Bienvenido al Mini Proyecto</h1>
+    <p>Este proyecto muestra la integración de conceptos de HTML, CSS Y JavaScript.</p>
+    <p class="font">To Do List</p>
+    <ul id="tareas-lista">
+        <li>Aprender a usar GitHub</li>
+        <li>Aprender a usar VSCode</li>
+    </ul>
+    <input type="text" id="nueva-tarea" placeholder="Agregar nueva tarea">
+    <button onclick="agregarTarea()">Agregar tarea</button>
+    <script>
+        function agregarTarea() {
+            var nuevaTarea = document.getElementById("nueva-tarea").value;
+            var nuevaLista = document.createElement("li");
+            nuevaLista.textContent = nuevaTarea;
+            document.getElementById("tareas-lista").appendChild(nuevaLista);
+            document.getElementById("nueva-tarea").value = "";
+        }
+    </script>
+    <script src="scripts.js"></script>
+</body>
+</html>
