@@ -1,0 +1,13 @@
+.cuadro {
+    width: 180px;
+    height: 180px;
+    border: 2px solid black;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 180px;
+    cursor: pointer;
+    background: #5eaab1;
+
+}
+
