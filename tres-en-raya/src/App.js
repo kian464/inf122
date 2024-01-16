@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
 
-import TableroC from './components/TableroC';
+//import TableroC from './components/TableroC';
+import Juego from './components/Juego';
 
 function App() {
 
@@ -11,7 +12,8 @@ function App() {
     <div className="App">
 
       
-      <TableroC />
+      
+      <Juego />
     </div>
   );
 }

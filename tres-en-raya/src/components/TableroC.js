@@ -38,4 +38,5 @@ function TableroC() {
         </div>
     );
 }
+
 export default TableroC;
